@@ -1,0 +1,3018 @@
+{
+  "system": {
+    "id": "aacf9bab.euc1.bao.systems",
+    "rev": "e76864d",
+    "version": "2.40.2.1",
+    "date": "2025-11-13T12:15:48.754+0000"
+  },
+  "categoryCombos": [
+    {
+      "code": "default",
+      "name": "default",
+      "created": "2023-02-10T21:49:07.313",
+      "lastUpdated": "2023-07-17T15:32:00.689",
+      "translations": [],
+      "categories": [
+        {
+          "id": "GLevLNI9wkl"
+        }
+      ],
+      "dataDimensionType": "DISAGGREGATION",
+      "skipTotal": false,
+      "id": "bjDvmb4bfuf"
+    }
+  ],
+  "dataEntryForms": [
+    {
+      "name": "Human Health - Sample Processing - Quarterly",
+      "created": "2024-06-28T09:02:24.238",
+      "lastUpdated": "2025-09-02T10:03:28.016",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "style": "NORMAL",
+      "htmlCode": "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 1005px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"font-size:14px;\">Has your site processed&nbsp;<strong>human health&nbsp;</strong>samples this quarter?</span></p>\n\n\t\t\t<p><span style=\"font-size:14px;\">If so,&nbsp;please complete <strong>Section 1</strong>.</span></p>\n\t\t\t</td>\n\t\t\t<td><input id=\"ZBrF2aqLwo8-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"font-size:14px;\">Has your site processed&nbsp;<strong>environmental</strong>&nbsp;samples this quarter?</span></p>\n\n\t\t\t<p><span style=\"font-size:14px;\">If so, please complete <b>Section 2.</b></span></p>\n\t\t\t</td>\n\t\t\t<td><input id=\"qbVYDCRDgpt-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"font-size:14px;\">Has your site processed&nbsp;<strong>food</strong>&nbsp;samples this quarter?</span></p>\n\n\t\t\t<p><span style=\"font-size:14px;\">If so, please complete <b>Section 3.</b></span></p>\n\t\t\t</td>\n\t\t\t<td><input id=\"RD7mjTP3qvK-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<h2>1. Human Health - Sample Processing - Quarterly</h2>\n\n<table border=\"1\" bordercolor=\"#ccc\" cellpadding=\"5\" cellspacing=\"0\" style=\"border-collapse:collapse;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td colspan=\"5\">\n\t\t\t<p>Please indicate (1) the actual number of samples processed for bacterial culture each quarter (if not processed, please write &#39;0&#39;).</p>\n\n\t\t\t<p>Please also indicate (2) the number of samples positive for each pathogen.&nbsp;</p>\n\n\t\t\t<p>Further information, e.g. reports on different pathogens, can be included in the narrative column</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" rowspan=\"1\"><strong>Samples</strong></td>\n\t\t\t<td><strong>Actual number of samples per quarter (if none write 0)</strong></td>\n\t\t\t<td><strong>Grantee Comments</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"4\" rowspan=\"1\">Cerebrospinal fluid</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1a1</td>\n\t\t\t<td>Cerebrospinal fluid (CSF) samples processed for bacterial culture (number)</td>\n\t\t\t<td><input id=\"EnEP0TMi5Qe-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"U6O1iM7Rz0P-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1a2</td>\n\t\t\t<td>number of positive CSF samples</td>\n\t\t\t<td><input id=\"DHcCfFrZSSV-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"r9YEpiWV8fo-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"4\" rowspan=\"1\">Urine</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1b1</td>\n\t\t\t<td>Urine samples processed for bacterial culture (number)</td>\n\t\t\t<td><input id=\"AKEMQCyn5Jh-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"XhEFbVmGZWv-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1b2</td>\n\t\t\t<td>number of positive urine samples</td>\n\t\t\t<td><input id=\"X0mWmd29hsW-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"R9S0V6j59OF-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"4\" rowspan=\"1\">Stool</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1c1</td>\n\t\t\t<td>Stool samples processed for bacterial culture (number)</td>\n\t\t\t<td><input id=\"mctKVZAhLPC-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"YlGooKMvkcl-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1c2</td>\n\t\t\t<td>number of positive stool samples</td>\n\t\t\t<td><input id=\"OH2xXsh1HQk-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"ErhNNroZdKr-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"4\" rowspan=\"1\">Pus/pus swabs</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1d1</td>\n\t\t\t<td>Pus/pus swabs samples processed for bacterial culture (number)</td>\n\t\t\t<td><input id=\"rH5zfvPIQl3-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"IthgdfvjY6R-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1d2</td>\n\t\t\t<td>number of positive pus samples</td>\n\t\t\t<td><input id=\"YHDShvePlG5-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"BbPWu8CEJXt-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"4\" rowspan=\"1\">Genitourinary</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1e1</td>\n\t\t\t<td>Genitourinary samples processed for bacterial culture (number)</td>\n\t\t\t<td><input id=\"ultEwlZy1Of-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"wbKcfvrX2sQ-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1e2</td>\n\t\t\t<td>number of positive genitourinary samples</td>\n\t\t\t<td><input id=\"iL9NMg7Hod3-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"cU2G6z4NT29-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"4\" rowspan=\"1\">Blood cultures</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1f1</td>\n\t\t\t<td>Blood culture samples processed for bacterial culture (number)</td>\n\t\t\t<td><input id=\"JW8DFNfawTT-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"AY6JWuoDN66-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1f2</td>\n\t\t\t<td>number of positive blood culture samples</td>\n\t\t\t<td><input id=\"dVyi6TRjLsB-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"kCOWq3rBmFl-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"4\" rowspan=\"1\">Other specimen types not listed above (e.g. pleural fluid aspirates, abdominal fluid collection aspirates, sputum, etc)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1g1</td>\n\t\t\t<td>Other samples processed for bacterial culture (number)</td>\n\t\t\t<td><input id=\"xoTjqQ6fHvg-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"ywZGeeRroRU-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1g2</td>\n\t\t\t<td>number of other culture-positive samples</td>\n\t\t\t<td><input id=\"XCuVIOym75F-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"VZizIrGIkVz-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<h2>2. Environmental&nbsp;- Sample Processing - Quarterly</h2>\n\n<table border=\"1\" bordercolor=\"#ccc\" cellpadding=\"5\" cellspacing=\"0\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td colspan=\"5\">Please indicate the actual number of sample types processed for bacterial culture each quarter<br />\n\t\t\t(if not processed, please write &#39;0&#39;)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"3\" rowspan=\"1\"><strong>Sample Type</strong></td>\n\t\t\t<td><strong>Actual number of samples per quarter (if none write 0)</strong></td>\n\t\t\t<td><strong>Grantee Comments</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2a</td>\n\t\t\t<td colspan=\"2\">Farm (litter, manure, or environment)</td>\n\t\t\t<td><input id=\"ilB6fq9hcwk-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"SWrUnlU3dXY-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2b</td>\n\t\t\t<td colspan=\"2\">Abattoir/slaughterhouse (litter, manure, or environment)</td>\n\t\t\t<td><input id=\"YYhfEvsNeIN-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"C5KbWozMt8i-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2c</td>\n\t\t\t<td colspan=\"2\">Animal drinking water</td>\n\t\t\t<td><input id=\"QsbLJ9mi6kM-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"FRVFeEG1qe4-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2d</td>\n\t\t\t<td colspan=\"2\">Sewage/Waste water (please indicate the source of the samples)</td>\n\t\t\t<td><input id=\"LyEdf4fbI6V-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"QYF5fWVyvKp-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2e</td>\n\t\t\t<td colspan=\"2\">Surface water (rivers/lake)</td>\n\t\t\t<td><input id=\"GNzwnggXU2u-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"Iajq87OneeJ-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2f</td>\n\t\t\t<td colspan=\"2\">Tap water (i.e. from mains supply)</td>\n\t\t\t<td><input id=\"fDinkjOJmhc-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"JgI4La0stlj-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2g</td>\n\t\t\t<td colspan=\"2\">Commercial bottled water</td>\n\t\t\t<td><input id=\"qtyY0kfjLTt-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"ip1IgCtyU6J-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2h</td>\n\t\t\t<td colspan=\"2\">Aquaculture water</td>\n\t\t\t<td><input id=\"N3GogGkDlAT-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"XeSb0hDnB1S-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2i</td>\n\t\t\t<td colspan=\"2\">Other (please specify)</td>\n\t\t\t<td><input id=\"ltuwquXm66I-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"vhSlsObcY94-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<h2>3. Food Safety - Sample Processing - Quarterly</h2>\n\n<table border=\"1\" bordercolor=\"#ccc\" cellpadding=\"5\" cellspacing=\"0\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td colspan=\"5\">Please indicate the actual number of sample types processed for bacterial culture each quarter<br />\n\t\t\t(if not processed, please write &#39;0&#39;)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"3\" rowspan=\"1\"><strong>Sample Type</strong></td>\n\t\t\t<td><strong>Actual number of samples per quarter (if none write 0)</strong></td>\n\t\t\t<td><strong>Grantee Comments</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3a</td>\n\t\t\t<td colspan=\"2\">Chicken meat or chicken products</td>\n\t\t\t<td><input id=\"CZziH3pvkuU-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"YKq5VCQEc7A-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3b</td>\n\t\t\t<td colspan=\"2\">Eggs or egg products</td>\n\t\t\t<td><input id=\"YEsILiAxkVo-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"nGSQzVjnS11-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3c</td>\n\t\t\t<td colspan=\"2\">Pork or pork products</td>\n\t\t\t<td><input id=\"JYMrZeX0BTp-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"q7DWWyXKCuC-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3d</td>\n\t\t\t<td colspan=\"2\">Beef or beef products (cattle, buffalo)</td>\n\t\t\t<td><input id=\"dJb4lxM0Tfj-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"obDkwLEG6So-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3e</td>\n\t\t\t<td colspan=\"2\">Meat or meat products from small ruminants (goats, sheep)</td>\n\t\t\t<td><input id=\"mpy1bobhv6J-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"KQuRbkCcYUX-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3f</td>\n\t\t\t<td colspan=\"2\">Milk or milk products (excludes milk received for mastitis testing)</td>\n\t\t\t<td><input id=\"EQNnHhUUK3p-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"keGzqtqEzMg-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3g</td>\n\t\t\t<td colspan=\"2\">Aquatic animal products (fish, crustaceans, shellfish, frogs)</td>\n\t\t\t<td><input id=\"WObP5rk2Q4e-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"kx4O9kPplYJ-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3h</td>\n\t\t\t<td colspan=\"2\">Plant-based foods (e.g. vegetables, fruits)</td>\n\t\t\t<td><input id=\"ZkiXMxXdcOq-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"yYGe2F0UdzI-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3i</td>\n\t\t\t<td colspan=\"2\">Other (please specify)</td>\n\t\t\t<td><input id=\"IkhpwcKTO7t-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t\t<td><input id=\"yvdLu47LHrP-HllvX50cXC0-val\" name=\"entryfield\" title=\"\" value=\"\" /></td>\n\t\t</tr>\n\t</tbody>\n</table>\n",
+      "format": 2,
+      "id": "jNsQ9w5f140"
+    }
+  ],
+  "categoryOptions": [
+    {
+      "code": "default",
+      "name": "default",
+      "created": "2023-02-10T21:49:07.308",
+      "lastUpdated": "2023-02-10T21:49:07.317",
+      "translations": [],
+      "shortName": "default",
+      "id": "xYerKDKCefk",
+      "attributeValues": []
+    }
+  ],
+  "dataSets": [
+    {
+      "name": "Human Health - Sample Processing - Quarterly",
+      "created": "2024-06-28T08:59:45.350",
+      "lastUpdated": "2025-09-02T10:03:28.027",
+      "translations": [],
+      "createdBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "Human Health - Sample Processing - Quarterly",
+      "legendSets": [],
+      "periodType": "Quarterly",
+      "dataInputPeriods": [],
+      "dataSetElements": [
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "dJb4lxM0Tfj"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "fDinkjOJmhc"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "KQuRbkCcYUX"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "iL9NMg7Hod3"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "kCOWq3rBmFl"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "Iajq87OneeJ"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "JW8DFNfawTT"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "SWrUnlU3dXY"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "JYMrZeX0BTp"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "XeSb0hDnB1S"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "ip1IgCtyU6J"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "XhEFbVmGZWv"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "QsbLJ9mi6kM"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "IkhpwcKTO7t"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "CZziH3pvkuU"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "YHDShvePlG5"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "keGzqtqEzMg"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "yvdLu47LHrP"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "AY6JWuoDN66"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "XCuVIOym75F"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "dVyi6TRjLsB"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "JgI4La0stlj"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "kx4O9kPplYJ"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "rH5zfvPIQl3"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "ZBrF2aqLwo8"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "VZizIrGIkVz"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "U6O1iM7Rz0P"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "C5KbWozMt8i"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "ZkiXMxXdcOq"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "obDkwLEG6So"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "N3GogGkDlAT"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "RD7mjTP3qvK"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "FRVFeEG1qe4"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "mctKVZAhLPC"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "ltuwquXm66I"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "ilB6fq9hcwk"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "mpy1bobhv6J"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "LyEdf4fbI6V"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "DHcCfFrZSSV"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "r9YEpiWV8fo"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "wbKcfvrX2sQ"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "ywZGeeRroRU"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "BbPWu8CEJXt"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "OH2xXsh1HQk"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "IthgdfvjY6R"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "AKEMQCyn5Jh"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "X0mWmd29hsW"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "GNzwnggXU2u"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "R9S0V6j59OF"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "EnEP0TMi5Qe"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "ErhNNroZdKr"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "qbVYDCRDgpt"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "xoTjqQ6fHvg"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "ultEwlZy1Of"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "WObP5rk2Q4e"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "QYF5fWVyvKp"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "YKq5VCQEc7A"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "YlGooKMvkcl"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "YYhfEvsNeIN"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "nGSQzVjnS11"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "cU2G6z4NT29"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "vhSlsObcY94"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "EQNnHhUUK3p"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "yYGe2F0UdzI"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "q7DWWyXKCuC"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "YEsILiAxkVo"
+          }
+        },
+        {
+          "dataSet": {
+            "id": "p1mkm8OOLOB"
+          },
+          "dataElement": {
+            "id": "qtyY0kfjLTt"
+          }
+        }
+      ],
+      "indicators": [],
+      "compulsoryDataElementOperands": [
+        {
+          "name": "hh_samples_qtr",
+          "created": "2025-11-13T12:15:48.756",
+          "lastUpdated": "2025-11-13T12:15:48.756",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "shortName": "hh_samples_qtr",
+          "dimensionItemType": "DATA_ELEMENT_OPERAND",
+          "legendSets": [],
+          "aggregationType": "COUNT",
+          "dataElement": {
+            "id": "ZBrF2aqLwo8"
+          },
+          "categoryOptionCombo": {
+            "id": "HllvX50cXC0"
+          },
+          "displayName": "hh_samples_qtr",
+          "dimensionItem": "ZBrF2aqLwo8.HllvX50cXC0",
+          "displayShortName": "hh_samples_qtr",
+          "favorite": false,
+          "displayFormName": "hh_samples_qtr",
+          "id": "ZBrF2aqLwo8",
+          "attributeValues": []
+        },
+        {
+          "name": "food_samples_qtr",
+          "created": "2025-11-13T12:15:48.756",
+          "lastUpdated": "2025-11-13T12:15:48.756",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "shortName": "food_samples_qtr",
+          "dimensionItemType": "DATA_ELEMENT_OPERAND",
+          "legendSets": [],
+          "aggregationType": "COUNT",
+          "dataElement": {
+            "id": "RD7mjTP3qvK"
+          },
+          "categoryOptionCombo": {
+            "id": "HllvX50cXC0"
+          },
+          "displayName": "food_samples_qtr",
+          "dimensionItem": "RD7mjTP3qvK.HllvX50cXC0",
+          "displayShortName": "food_samples_qtr",
+          "favorite": false,
+          "displayFormName": "food_samples_qtr",
+          "id": "RD7mjTP3qvK",
+          "attributeValues": []
+        },
+        {
+          "name": "env_samples_qtr",
+          "created": "2025-11-13T12:15:48.756",
+          "lastUpdated": "2025-11-13T12:15:48.756",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "shortName": "env_samples_qtr",
+          "dimensionItemType": "DATA_ELEMENT_OPERAND",
+          "legendSets": [],
+          "aggregationType": "COUNT",
+          "dataElement": {
+            "id": "qbVYDCRDgpt"
+          },
+          "categoryOptionCombo": {
+            "id": "HllvX50cXC0"
+          },
+          "displayName": "env_samples_qtr",
+          "dimensionItem": "qbVYDCRDgpt.HllvX50cXC0",
+          "displayShortName": "env_samples_qtr",
+          "favorite": false,
+          "displayFormName": "env_samples_qtr",
+          "id": "qbVYDCRDgpt",
+          "attributeValues": []
+        }
+      ],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      },
+      "mobile": false,
+      "dataEntryForm": {
+        "id": "jNsQ9w5f140"
+      },
+      "version": 31,
+      "expiryDays": 0,
+      "timelyDays": 15,
+      "notifyCompletingUser": false,
+      "openFuturePeriods": 1,
+      "openPeriodsAfterCoEndDate": 0,
+      "fieldCombinationRequired": false,
+      "validCompleteOnly": false,
+      "noValueRequiresComment": false,
+      "skipOffline": false,
+      "dataElementDecoration": false,
+      "renderAsTabs": false,
+      "renderHorizontally": false,
+      "compulsoryFieldsCompleteOnly": false,
+      "id": "p1mkm8OOLOB",
+      "attributeValues": []
+    }
+  ],
+  "categories": [
+    {
+      "code": "default",
+      "name": "default",
+      "created": "2023-02-10T21:49:07.311",
+      "lastUpdated": "2025-10-15T22:30:18.705",
+      "translations": [],
+      "shortName": "default",
+      "dataDimensionType": "DISAGGREGATION",
+      "dataDimension": false,
+      "categoryOptions": [
+        {
+          "id": "xYerKDKCefk"
+        }
+      ],
+      "id": "GLevLNI9wkl",
+      "attributeValues": []
+    }
+  ],
+  "categoryOptionCombos": [
+    {
+      "code": "default",
+      "name": "default",
+      "created": "2023-02-10T21:49:07.315",
+      "lastUpdated": "2023-02-10T21:49:07.316",
+      "translations": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      },
+      "categoryOptions": [
+        {
+          "id": "xYerKDKCefk"
+        }
+      ],
+      "ignoreApproval": false,
+      "id": "HllvX50cXC0",
+      "attributeValues": []
+    }
+  ],
+  "dataElements": [
+    {
+      "name": "ah_11a6_food_milk_narrative_qtr",
+      "created": "2024-08-13T14:14:02.449",
+      "lastUpdated": "2024-09-12T09:03:26.401",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a6_food_milk_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "keGzqtqEzMg",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a5_food_SmallRuminantMeat_narrative_qtr",
+      "created": "2024-08-13T14:10:32.363",
+      "lastUpdated": "2024-09-12T09:03:26.414",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a5_food_SmallRuminantMeat_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "KQuRbkCcYUX",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "env_samples_qtr",
+      "created": "2024-09-11T14:46:54.405",
+      "lastUpdated": "2024-09-11T14:46:54.405",
+      "translations": [],
+      "createdBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "env_samples_qtr",
+      "legendSets": [],
+      "aggregationType": "COUNT",
+      "valueType": "BOOLEAN",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "qbVYDCRDgpt",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a3_food_pork_narrative_qtr",
+      "created": "2024-08-13T14:08:38.572",
+      "lastUpdated": "2024-09-12T09:03:26.409",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a3_food_pork_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "q7DWWyXKCuC",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a3_food_pork_qtr",
+      "created": "2024-08-13T14:08:12.457",
+      "lastUpdated": "2025-01-09T09:10:24.322",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a3_food_pork_qtr",
+      "description": "Pork products - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "JYMrZeX0BTp",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8f2_blood_positive_qtr",
+      "created": "2024-06-28T10:45:59.195",
+      "lastUpdated": "2024-09-12T09:03:26.401",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8f2_blood_positive_qtr",
+      "formName": "number of positive blood culture samples",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "dVyi6TRjLsB",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8c2_stool_positive_qtr",
+      "created": "2024-06-28T10:44:21.804",
+      "lastUpdated": "2024-09-12T09:03:26.419",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8c2_stool_positive_qtr",
+      "formName": "number of positive stool samples",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "OH2xXsh1HQk",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_samples_qtr",
+      "created": "2024-09-11T16:22:07.039",
+      "lastUpdated": "2024-09-11T16:22:07.039",
+      "translations": [],
+      "createdBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_samples_qtr",
+      "legendSets": [],
+      "aggregationType": "COUNT",
+      "valueType": "BOOLEAN",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "ZBrF2aqLwo8",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a1_env_farm_qtr",
+      "created": "2024-08-13T13:48:51.567",
+      "lastUpdated": "2025-01-09T09:03:53.575",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a1_env_farm_qtr",
+      "description": "Farm - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0') - Farm",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "ilB6fq9hcwk",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8b2_urine_positive_qtr",
+      "created": "2024-06-28T10:42:20.147",
+      "lastUpdated": "2024-09-12T09:03:26.414",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8b2_urine_positive_qtr",
+      "formName": "number of positive urine samples",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "X0mWmd29hsW",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8c2_stool_positive_narrative_qtr",
+      "created": "2024-06-28T10:44:27.403",
+      "lastUpdated": "2024-09-12T09:03:26.398",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8c2_stool_positive_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "ErhNNroZdKr",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a8_food_plants_qtr",
+      "created": "2024-08-13T14:15:39.765",
+      "lastUpdated": "2025-01-09T09:11:00.369",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a8_food_plants_qtr",
+      "description": "Plant-based products - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "ZkiXMxXdcOq",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a3_env_drinking_narrative_qtr",
+      "created": "2024-08-13T13:57:11.696",
+      "lastUpdated": "2024-09-12T09:03:26.393",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a3_env_drinking_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "FRVFeEG1qe4",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a9_env_other_qtr",
+      "created": "2024-08-13T14:04:53.476",
+      "lastUpdated": "2025-01-09T09:09:49.317",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a9_env_other_qtr",
+      "description": "Other - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "ltuwquXm66I",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a7_env_bottledwtr_qtr",
+      "created": "2024-08-13T14:02:58.833",
+      "lastUpdated": "2025-01-09T09:09:35.705",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a7_env_bottledwtr_qtr",
+      "description": "Bottled water - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "qtyY0kfjLTt",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8g2_other_positive_narrative_qtr",
+      "created": "2024-06-28T10:46:36.136",
+      "lastUpdated": "2024-09-12T09:03:26.410",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8g2_other_positive_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "VZizIrGIkVz",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8g1_other_qtr",
+      "created": "2024-06-28T10:46:14.213",
+      "lastUpdated": "2024-09-12T09:03:26.420",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8g1_other_qtr",
+      "formName": "Other samples processed for bacterial culture (number)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "xoTjqQ6fHvg",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a2_food_egg_qtr",
+      "created": "2024-08-13T14:07:18.598",
+      "lastUpdated": "2025-01-09T09:10:17.128",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a2_food_egg_qtr",
+      "description": "Egg/egg products - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "YEsILiAxkVo",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a3_env_drinking_qtr",
+      "created": "2024-08-13T13:53:25.019",
+      "lastUpdated": "2025-01-09T09:09:03.470",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a3_env_drinking_qtr",
+      "description": "Animal drinking water - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "QsbLJ9mi6kM",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8f2_blood_positive_narrative_qtr",
+      "created": "2024-06-28T10:46:04.460",
+      "lastUpdated": "2024-09-12T09:03:26.395",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8f2_blood_positive_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "kCOWq3rBmFl",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a4_env_sewage_qtr",
+      "created": "2024-08-13T13:58:42.216",
+      "lastUpdated": "2025-01-09T09:09:09.621",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a4_env_sewage_qtr",
+      "description": "Sewage/Waste water - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "LyEdf4fbI6V",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8a1_cerebrospinalfluid_qtr",
+      "created": "2024-06-28T10:41:27.410",
+      "lastUpdated": "2024-09-12T09:03:26.409",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8a1_cerebrospinalfluid_qtr",
+      "formName": "Cerebrospinal fluid (CSF) samples processed for bacterial culture (number)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "EnEP0TMi5Qe",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8c1_stool_qtr",
+      "created": "2024-06-28T10:44:00.422",
+      "lastUpdated": "2024-09-12T09:03:26.416",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8c1_stool_qtr",
+      "formName": "Stool samples processed for bacterial culture (number)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "mctKVZAhLPC",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8c1_stool_narrative_qtr",
+      "created": "2024-06-28T10:44:06.309",
+      "lastUpdated": "2024-09-12T09:03:26.416",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8c1_stool_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "YlGooKMvkcl",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8e2_genitourinary_positive_qtr",
+      "created": "2024-06-28T10:45:26.183",
+      "lastUpdated": "2024-09-12T09:03:26.421",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8e2_genitourinary_positive_qtr",
+      "formName": "number of positive GU samples",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "iL9NMg7Hod3",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a5_env_surfacewtr_narrative_qtr",
+      "created": "2024-08-13T14:00:06.398",
+      "lastUpdated": "2024-09-12T09:03:26.415",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a5_env_surfacewtr_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Iajq87OneeJ",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8e1_genitourinary_qtr",
+      "created": "2024-06-28T10:45:11.828",
+      "lastUpdated": "2024-09-12T09:03:26.408",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8e1_genitourinary_qtr",
+      "formName": "Genitourinary samples processed for bacterial culture (number)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "ultEwlZy1Of",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a5_food_SmallRuminantMeat_qtr",
+      "created": "2024-08-13T14:10:10.093",
+      "lastUpdated": "2025-01-09T09:10:37.693",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a5_food_SmallRuminantMeat_qtr",
+      "description": "Small Ruminant Meat - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "mpy1bobhv6J",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a6_env_tap_narrative_qtr",
+      "created": "2024-08-13T14:01:03.501",
+      "lastUpdated": "2024-09-12T09:03:26.399",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a6_env_tap_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "JgI4La0stlj",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8a1_cerebrospinalfluid_narrative_qtr",
+      "created": "2024-06-28T10:41:33.124",
+      "lastUpdated": "2024-09-12T09:03:26.400",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8a1_cerebrospinalfluid_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "U6O1iM7Rz0P",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a1_env_farm_narrative_qtr",
+      "created": "2024-08-13T13:51:15.935",
+      "lastUpdated": "2024-09-12T09:03:26.421",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a1_env_farm_samples_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "SWrUnlU3dXY",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a4_food_beef_qtr",
+      "created": "2024-08-13T14:09:08.638",
+      "lastUpdated": "2025-01-09T09:10:31.510",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a4_food_beef_qtr",
+      "description": "Beef products - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "dJb4lxM0Tfj",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a9_env_other_narrative_qtr",
+      "created": "2024-08-13T14:05:19.683",
+      "lastUpdated": "2024-09-12T09:03:26.394",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a9_env_other_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "vhSlsObcY94",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a7_food_aquatic_qtr",
+      "created": "2024-08-13T14:14:35.474",
+      "lastUpdated": "2025-01-09T09:10:51.197",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a7_food_aquatic_qtr",
+      "description": "Aquatic animal products - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "WObP5rk2Q4e",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a6_env_tap_qtr",
+      "created": "2024-08-13T14:00:43.233",
+      "lastUpdated": "2025-01-09T09:09:28.434",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a6_env_tap_qtr",
+      "description": "Tap water - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "fDinkjOJmhc",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a9_food_other_narrative_qtr",
+      "created": "2024-08-13T14:16:43.649",
+      "lastUpdated": "2024-09-12T09:03:26.403",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a9_food_other_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "yvdLu47LHrP",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a5_env_surfacewtr_qtr",
+      "created": "2024-08-13T13:59:47.669",
+      "lastUpdated": "2025-01-09T09:09:16.680",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a5_env_surfacewtr_qtr",
+      "description": "Surface water - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "GNzwnggXU2u",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8a2_cerebrospinalfluid_positive_qtr",
+      "created": "2024-06-28T10:41:51.528",
+      "lastUpdated": "2024-09-12T09:03:26.405",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8a2_cerebrospinalfluid_positive_qtr",
+      "formName": "number of positive CSF samples",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "DHcCfFrZSSV",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8f1_blood_qtr",
+      "created": "2024-06-28T10:45:44.557",
+      "lastUpdated": "2024-09-12T09:03:26.408",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8f1_blood_qtr",
+      "formName": "Blood culture samples processed for bacterial culture (number)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "JW8DFNfawTT",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8e2_genitourinary_positive_narrative_qtr",
+      "created": "2024-06-28T10:45:32.644",
+      "lastUpdated": "2024-09-12T09:03:26.397",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8e2_genitourinary_positive_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "cU2G6z4NT29",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8b1_urine_qtr",
+      "created": "2024-06-28T10:42:02.199",
+      "lastUpdated": "2024-09-12T09:03:26.402",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8b1_urine_qtr",
+      "formName": "Urine samples processed for bacterial culture (number)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "AKEMQCyn5Jh",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a2_env_abattoir_narrative_qtr",
+      "created": "2024-08-13T13:52:49.859",
+      "lastUpdated": "2024-09-12T09:03:26.405",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a2_env_abattoir_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "C5KbWozMt8i",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a2_env_abattoir_qtr",
+      "created": "2024-08-13T13:52:18.720",
+      "lastUpdated": "2025-01-09T09:08:51.344",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a2_env_abattoir_qtr",
+      "description": "Abattoir - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "YYhfEvsNeIN",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a8_env_aquaculture_narrative_qtr",
+      "created": "2024-08-13T14:04:14.850",
+      "lastUpdated": "2024-09-12T09:03:26.401",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a8_env_aquaculture_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "XeSb0hDnB1S",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8e1_genitourinary_narrative_qtr",
+      "created": "2024-06-28T10:45:18.542",
+      "lastUpdated": "2024-09-12T09:03:26.397",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8e1_genitourinary_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "wbKcfvrX2sQ",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8d2_pus_positive_qtr",
+      "created": "2024-06-28T10:44:53.683",
+      "lastUpdated": "2024-09-12T09:03:26.398",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8d2_pus_positive_qtr",
+      "formName": "number of positive pus samples",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "YHDShvePlG5",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8d1_pus_qtr",
+      "created": "2024-06-28T10:44:38.973",
+      "lastUpdated": "2024-09-12T09:03:26.412",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8d1_pus_qtr",
+      "formName": "Pus / pus swabs samples processed for bacterial culture (number)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "rH5zfvPIQl3",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a8_env_aquaculture_qtr",
+      "created": "2024-08-13T14:03:50.069",
+      "lastUpdated": "2025-01-09T09:09:41.694",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a8_env_aquaculture_qtr",
+      "description": "Aquaculture - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "N3GogGkDlAT",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a7_food_aquatic_narrative_qtr",
+      "created": "2024-08-13T14:15:06.398",
+      "lastUpdated": "2024-09-12T09:03:26.397",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a7_food_aquatic_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "kx4O9kPplYJ",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a4_food_beef_narrative_qtr",
+      "created": "2024-08-13T14:09:26.197",
+      "lastUpdated": "2024-09-12T09:03:26.400",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a4_food_beef_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "obDkwLEG6So",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a9_food_other_qtr",
+      "created": "2024-08-13T14:16:26.271",
+      "lastUpdated": "2025-01-09T09:11:14.914",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a9_food_other_qtr",
+      "description": "Other products - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "IkhpwcKTO7t",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a4_env_sewage_narrative_qtr",
+      "created": "2024-08-13T13:59:09.561",
+      "lastUpdated": "2024-09-12T09:03:26.396",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a4_env_sewage_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "QYF5fWVyvKp",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8b2_urine_positive_narrative_qtr",
+      "created": "2024-06-28T10:42:26.682",
+      "lastUpdated": "2024-09-12T09:03:26.410",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8b2_urine_positive_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "R9S0V6j59OF",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a2_food_egg_narrative_qtr",
+      "created": "2024-08-13T14:07:38.254",
+      "lastUpdated": "2024-09-12T09:03:26.394",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a2_food_egg_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "nGSQzVjnS11",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a1_food_chicken_narrative_qtr",
+      "created": "2024-08-13T14:06:42.192",
+      "lastUpdated": "2024-09-12T09:03:26.411",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a1_food_chicken_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "YKq5VCQEc7A",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "food_samples_qtr",
+      "created": "2024-09-11T14:47:13.751",
+      "lastUpdated": "2024-09-11T14:47:13.751",
+      "translations": [],
+      "createdBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "food_samples_qtr",
+      "legendSets": [],
+      "aggregationType": "COUNT",
+      "valueType": "BOOLEAN",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "RD7mjTP3qvK",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a6_food_milk_qtr",
+      "created": "2024-08-13T14:13:42.571",
+      "lastUpdated": "2025-01-09T09:10:44.629",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a6_food_milk_qtr",
+      "description": "Milk products - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "EQNnHhUUK3p",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8g1_other_narrative_qtr",
+      "created": "2024-06-28T10:46:20.023",
+      "lastUpdated": "2024-09-12T09:03:26.399",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8g1_other_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "ywZGeeRroRU",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8d1_pus_narrative_qtr",
+      "created": "2024-06-28T10:44:45.637",
+      "lastUpdated": "2024-09-12T09:03:26.409",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8d1_pus_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "IthgdfvjY6R",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a1_food_chicken_qtr",
+      "created": "2024-08-13T14:06:09.900",
+      "lastUpdated": "2025-01-09T09:10:12.260",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a1_food_chicken_qtr",
+      "description": "Chicken meat products - Please indicate the exact number of samples processed for bacterial culture each quarter (if not processed, please write '0')",
+      "formName": "Narrative",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "CZziH3pvkuU",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8f1_blood_narrative_qtr",
+      "created": "2024-06-28T10:45:50.555",
+      "lastUpdated": "2024-09-12T09:03:26.406",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8f1_blood_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "AY6JWuoDN66",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8g2_other_positive_qtr",
+      "created": "2024-06-28T10:46:30.497",
+      "lastUpdated": "2024-09-12T09:03:26.413",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8g2_other_positive_qtr",
+      "formName": "number of other culture-positive samples",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": true,
+      "id": "XCuVIOym75F",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_10a7_env_bottledwtr_narrative_qtr",
+      "created": "2024-08-13T14:03:16.328",
+      "lastUpdated": "2024-09-12T09:03:26.404",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_10a7_env_bottledwtr_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "ip1IgCtyU6J",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8d2_pus_positive_narrative_qtr",
+      "created": "2024-06-28T10:44:59.238",
+      "lastUpdated": "2024-09-12T09:03:26.406",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8d2_pus_positive_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "BbPWu8CEJXt",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "ah_11a8_food_plants_narrative_qtr",
+      "created": "2024-08-13T14:16:01.002",
+      "lastUpdated": "2024-09-12T09:03:26.395",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "ah_11a8_food_plants_n_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "yYGe2F0UdzI",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8a2_cerebrospinalfluid_positive_narrative_qtr",
+      "created": "2024-06-28T10:43:28.192",
+      "lastUpdated": "2024-09-12T09:03:26.419",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8a2_cerebrospinalfluid_p_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "r9YEpiWV8fo",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    },
+    {
+      "name": "hh_8b1_urine_narrative_qtr",
+      "created": "2024-06-28T10:42:09.322",
+      "lastUpdated": "2024-09-12T09:03:26.413",
+      "translations": [],
+      "createdBy": {
+        "id": "H5TGKwzsD2i",
+        "code": null,
+        "name": "Kevin Tan",
+        "displayName": "Kevin Tan",
+        "username": "ke.tan"
+      },
+      "lastUpdatedBy": {
+        "id": "fnMwq1yml9o",
+        "code": null,
+        "name": "Jake Wildfire",
+        "displayName": "Jake Wildfire",
+        "username": "jake.wildfire"
+      },
+      "shortName": "hh_8b1_urine_narrative_qtr",
+      "formName": "Narrative (optional comments or narrative for above question or where indicated in above question)",
+      "legendSets": [],
+      "aggregationType": "NONE",
+      "valueType": "LONG_TEXT",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "XhEFbVmGZWv",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "bjDvmb4bfuf"
+      }
+    }
+  ]
+}
