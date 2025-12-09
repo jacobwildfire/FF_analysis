@@ -1622,11 +1622,11 @@ hh_tiers_df <- select(hh_tiers_df, !(key))
 ############################# Producing helpful resources
 
 ## Save the human readable, wide format of all of the LSHTM roadmap questions
-write_xlsx(hh_all_df, "/Output files/HH/1a. HH site data - Human readable.xlsx")
+write_xlsx(hh_all_df, "Output files/HH/1a. HH site data - Human readable.xlsx")
 
 ## Save the file which contains "Precore", "Core", "Extended" and "Advanced" status
 ## calculations for each LSHTM Roadmap relevant HH site tool question.
-write_xlsx(hh_tiers_df, "/Output files/HH/1b. HH site status - All questions.xlsx")
+write_xlsx(hh_tiers_df, "Output files/HH/1b. HH site status - All questions.xlsx")
 
 # Note: Individual questions contribute to an overall subcomponent's status, in a
 #       question/answer dependent manner. The level that each answer contributes to
@@ -1655,3 +1655,4 @@ hh_tiers_df <- hh_tiers_df %>%
 
 ## Save as a mastersheet.
 write_xlsx(hh_tiers_df, "Output files/HH/1. HH LSHTM Roadmap status.xlsx") ## Modify the output directory as required.
+
