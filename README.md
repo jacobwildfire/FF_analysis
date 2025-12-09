@@ -24,7 +24,7 @@ To fully utilise this package requires:
 - An existing healthcare or One Health DHIS2 system containing microbiology laboratories.
 - A basic familiarity with R.
 	- Ensure [R](https://cran.r-project.org/) and [RStudio](https://posit.co/download/rstudio-desktop/) are downloaded.
-
+***
 ## Instructions 1-2: Preparing the repository **(GitHub/Windows)**
 ### 1. Downloading the repository
 The most simple way to download and initialise the repository is to download it directly from GitHub. To do this,
