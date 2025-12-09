@@ -25,8 +25,8 @@ To fully utilise this package requires:
 - A basic familiarity with R.
 	- Ensure [R](https://cran.r-project.org/) and [RStudio](https://posit.co/download/rstudio-desktop/) are downloaded.
 
-## Instructions 1-2: Downloading/Preparing the repository **(GitHub/Windows)**
-### 1. Downloading/Initialising the repository
+## Instructions 1-2: Preparing the repository **(GitHub/Windows)**
+### 1. Downloading the repository
 The most simple way to download and initialise the repository is to download it directly from GitHub. To do this,
 
 1. Click '<> Code' on the 'FF_analysis' GitHub repository page.
@@ -47,7 +47,7 @@ Identify the microbiology laboratories from which you would like to capture and 
 In the 'FF_analysis-main/Resource files/' folder, access the `Site masterlist template.xlsx` file. Within this excel are example sites. Replace these with your selected sites.
 Instructions on how to fill the attributes of each site can be found in the 'READ ME' tab, and attribute headings.
 
-## Instructions 3-4: Uploading forms and collecting data **(DHIS2)**
+## Instructions 3-4: Uploading forms and downloading data **(DHIS2)**
 ### 3. Uploading forms to DHIS2
 The DHIS2 metadata files required to upload the data collection forms to DHIS2 are stored in 'FF_analysis-main/Resource files/DHIS2 form upload files/'.
 To upload these to your system,
