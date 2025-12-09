@@ -136,7 +136,7 @@ Files will deposit excel their outputs into the 'FF_analysis-main/Output files/'
 Files 2a to 3b will also open a `shiny` app, allowing you to modify and save your plots as you see fit.
 
 When you are ready to analyse your own downloaded data, in each code file under the 'Loading dataframes' section of code, simply change the read.csv argument to be your own data.
-
+***
 **You are now ready to analyse your own data.** For more information as to how, please see the corresponding [publication](PUBLICATION LINK HERE).
 
 For more information as to what each level of function corresponds to (i.e. 'Core', 'Extended' and 'Advanced'), please see Table 2 of this additional [publication](https://wellcomeopenresearch.org/articles/2-92/v1).
