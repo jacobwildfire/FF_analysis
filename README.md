@@ -25,7 +25,7 @@ To fully utilise this package requires:
 - A basic familiarity with R.
 	- Ensure [R](https://cran.r-project.org/) and [RStudio](https://posit.co/download/rstudio-desktop/) are downloaded.
 
-## Instructions 1-2: Downloading/Preparing the repository (GitHub)
+## Instructions 1-2: Downloading/Preparing the repository **(GitHub/Windows)**
 ### 1. Downloading/Initialising the repository
 The most simple way to download and initialise the repository is to download it directly from GitHub. To do this,
 
@@ -47,7 +47,7 @@ Identify the microbiology laboratories from which you would like to capture and 
 In the 'FF_analysis-main/Resource files/' folder, access the `Site masterlist template.xlsx` file. Within this excel are example sites. Replace these with your selected sites.
 Instructions on how to fill the attributes of each site can be found in the 'READ ME' tab, and attribute headings.
 
-## Instructions 3-4: Uploading forms and collecting data (DHIS2)
+## Instructions 3-4: Uploading forms and collecting data **(DHIS2)**
 ### 3. Uploading forms to DHIS2
 The DHIS2 metadata files required to upload the data collection forms to DHIS2 are stored in 'FF_analysis-main/Resource files/DHIS2 form upload files/'.
 To upload these to your system,
@@ -96,7 +96,7 @@ When you are ready to download your data from DHIS2,
 
 When you are finished, if you are looking to download/analyse all forms, you should have separate HH and AH .csv datasets for the site and sample processing forms.
 
-## Instructions 5 - Performing analyses (RStudio)
+## Instructions 5 - Performing analyses **(RStudio)**
 ### 5. Analysing data
 If you would like to practise data analysis, or have your own downloaded data to analyse, open RStudio. 
 
@@ -139,7 +139,7 @@ When you are ready to analyse your own downloaded data, in each code file under 
 
 **You are now ready to analyse your own data.** For more information as to how, please see the corresponding [publication](PUBLICATION LINK HERE).
 
-For more information as to what each level of function corresponds to (i.e. 'Core', 'Extended' and 'Advanced'), please see Table 2 of this additional [publication] (https://wellcomeopenresearch.org/articles/2-92/v1).
+For more information as to what each level of function corresponds to (i.e. 'Core', 'Extended' and 'Advanced'), please see Table 2 of this additional [publication](https://wellcomeopenresearch.org/articles/2-92/v1).
 
 **Note**: For code files 3a and 3b, changing the data range with the 'Cumulative' option selected will cause samples to be cumulatively counted from the beginning of the **new** date range.
 
