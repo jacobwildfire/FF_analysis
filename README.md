@@ -65,7 +65,7 @@ If you are a more advanced user of RStudio and have cloned repositories to RStud
 You should now have access to the repository resources within a folder called 'FF_analysis-main/'. Open it and move to [step 2](https://github.com/jacobwildfire/FF_analysis/tree/main?tab=readme-ov-file#2-preparing-your-site-masterlist).
 
 ### 2. Preparing your site masterlist
-**If you would like to first practise with the example datasets, _start at [step 5]_**(https://github.com/jacobwildfire/FF_analysis/tree/main?tab=readme-ov-file#5-analysing-data)
+**If you would like to first practise with the example datasets, _start at_** [**_step 5_**](https://github.com/jacobwildfire/FF_analysis/tree/main?tab=readme-ov-file#5-analysing-data)
 
 Identify the microbiology laboratories from which you would like to capture and monitor AMR surveillance function data.
 
