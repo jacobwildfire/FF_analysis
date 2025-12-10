@@ -44,7 +44,7 @@ The most simple way to download and initialise the repository is to download it 
 	- Choose the exact folder you would like the files to go into. If this is the 'Downloads/' folder, ensure you are extracting it into '\Downloads' and not '\Downloads\FF_analysis-main', as the latter will create two layers of folders with the same name. This is confusing and unnecessary.
 	- I would recommend unzipping it into your 'Documents/' folder. This should allow the R code to automatically run when it comes time to use it, provided you do not have custom RStudio settings.
 
-You should now have access to the repository resources within a folder called 'FF_analysis-main/'. Open it and move to step 2.
+You should now have access to the repository resources within a folder called 'FF_analysis-main/'. Open it and move to [step 2](https://github.com/jacobwildfire/FF_analysis/tree/main?tab=readme-ov-file#2-preparing-your-site-masterlist).
 
 #### 1b. Cloning 'FF_analysis' from GitHub **(RStudio)**
 If you are a more advanced user of RStudio and have cloned repositories to RStudio before you can do so by,
@@ -62,10 +62,10 @@ If you are a more advanced user of RStudio and have cloned repositories to RStud
   - Again, if you plan to run the example data and want to keep things simple, save it to your 'Documents/' folder.
 7. Click *Create Project*.
 
-You should now have access to the repository resources within a folder called 'FF_analysis-main/'. Open it and move to step 2.
+You should now have access to the repository resources within a folder called 'FF_analysis-main/'. Open it and move to [step 2](https://github.com/jacobwildfire/FF_analysis/tree/main?tab=readme-ov-file#2-preparing-your-site-masterlist).
 
 ### 2. Preparing your site masterlist
-**If you would like to first practise with the example datasets, _start at step 5_**
+**If you would like to first practise with the example datasets, _start at [step 5]_**(https://github.com/jacobwildfire/FF_analysis/tree/main?tab=readme-ov-file#5-analysing-data)
 
 Identify the microbiology laboratories from which you would like to capture and monitor AMR surveillance function data.
 
