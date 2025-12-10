@@ -6,7 +6,7 @@ This repository contains the resources that allow the recreation of the AMR surv
 By following the instructions in this file, you will be able to recreate the DHIS2 forms used to collect AMR site function data in your own DHIS2 system. 
 This package can then also be used to produce analyses and graphs of collected data.
 
-An example dataset using modified real-world data has been included in the '/DHIS2 exported files' folder. By using these as analysis input files, you can practise with semi-real data.
+An example dataset using modified real-world data has been included in the 'FF_analysis-main/DHIS2 exported files' folder. By using these as analysis input files, you can practise with semi-real data.
 
 For more information on how the outputs of these analyses can be used, please review the corresponding [publication](PUBLICATION LINK HERE).
 
