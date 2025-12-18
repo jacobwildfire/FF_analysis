@@ -264,7 +264,7 @@ ui <- fluidPage(
                  
                  checkboxGroupInput("include_values", "Include Values:",
                                     choices = c("Total", "Positive"),
-                                    selected = c("Total", "Positive")),
+                                    selected = c("Total")),
                  
                  selectInput("file_format_type", "Download Format:",
                              choices = c("PNG" = "png", "PDF" = "pdf")),
