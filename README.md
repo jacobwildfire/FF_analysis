@@ -165,7 +165,8 @@ When you are ready to analyse your own downloaded data, in each code file under 
 ***
 **You are now ready to analyse your own data.** For more information as to how, please see the corresponding [publication](PUBLICATION LINK HERE).
 
-For more information as to what each level of function corresponds to (i.e. 'Core', 'Extended' and 'Advanced'), please see Table 2 of this additional [publication](https://wellcomeopenresearch.org/articles/2-92/v1).
+For more information as to what each level of function corresponds to (i.e. 'Core', 'Extended' and 'Advanced'), see Table 2 of this additional [publication](https://wellcomeopenresearch.org/articles/2-92/v1).
+For information on how each subcomponent competency level is calculated using site data, please refer to the HH and AH versions of the following PDFs: `Resouce files/Coding AMR laboratory function.pdf`.
 
 **Note**: For code files 3a and 3b, changing the data range with the *Cumulative* option selected will cause samples to be cumulatively counted from the beginning of the **new** date range.
 
