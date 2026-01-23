@@ -439,20 +439,36 @@ for (i in ah_all_df$key){
 ## In addition, for "Extended", requires 1a3 to be "Extended".
 
 for (i in ah_all_df$key){
-  if (ah_tiers_df[ah_tiers_df$key == i, "tier1a1"] == "Core" &
-      ah_tiers_df[ah_tiers_df$key == i, "tier1a2"] == "Extended" &
-      ah_tiers_df[ah_tiers_df$key == i, "tier1a3"] == "Extended" &
-      ah_tiers_df[ah_tiers_df$key == i, "tier4b2"] == "Core") {
-    ah_tiers_df[ah_tiers_df$key == i, "tier1a"] <- "Extended"
-  } else if (ah_tiers_df[ah_tiers_df$key == i, "tier1a1"] == "Core" &
-             (ah_tiers_df[ah_tiers_df$key == i, "tier1a3"] == "Core"|
-              ah_tiers_df[ah_tiers_df$key == i, "tier1a2"] == "Core") &
-             ah_tiers_df[ah_tiers_df$key == i, "tier1a3"] != "Precore" &
-             ah_tiers_df[ah_tiers_df$key == i, "tier1a2"] != "Precore" &
-             ah_tiers_df[ah_tiers_df$key == i, "tier4b2"] == "Core") {
-    ah_tiers_df[ah_tiers_df$key == i, "tier1a"] <- "Core"
+  ## Given that tier1a2 did not exist until Phase 2 of the Fleming Fund, 
+  ## only site data from 2024 onwards is calculated using this question.
+  if(as.numeric(substr(ah_all_df[ah_all_df$key == i,"reporting.month"], 1, 4))>2023) {
+    if (ah_tiers_df[ah_tiers_df$key == i, "tier1a1"] == "Core" &
+        ah_tiers_df[ah_tiers_df$key == i, "tier1a2"] == "Extended" &
+        ah_tiers_df[ah_tiers_df$key == i, "tier1a3"] == "Extended" &
+        ah_tiers_df[ah_tiers_df$key == i, "tier4b2"] == "Core") {
+      ah_tiers_df[ah_tiers_df$key == i, "tier1a"] <- "Extended"
+    } else if (ah_tiers_df[ah_tiers_df$key == i, "tier1a1"] == "Core" &
+               (ah_tiers_df[ah_tiers_df$key == i, "tier1a3"] == "Core"|
+                ah_tiers_df[ah_tiers_df$key == i, "tier1a2"] == "Core") &
+               ah_tiers_df[ah_tiers_df$key == i, "tier1a3"] != "Precore" &
+               ah_tiers_df[ah_tiers_df$key == i, "tier1a2"] != "Precore" &
+               ah_tiers_df[ah_tiers_df$key == i, "tier4b2"] == "Core") {
+      ah_tiers_df[ah_tiers_df$key == i, "tier1a"] <- "Core"
+    } else {
+      ah_tiers_df[ah_tiers_df$key == i, "tier1a"] <- "Precore"
+    }
   } else {
-    ah_tiers_df[ah_tiers_df$key == i, "tier1a"] <- "Precore"
+    if (ah_tiers_df[ah_tiers_df$key == i, "tier1a1"] == "Core" &
+        ah_tiers_df[ah_tiers_df$key == i, "tier1a3"] == "Extended" &
+        ah_tiers_df[ah_tiers_df$key == i, "tier4b2"] == "Core") {
+      ah_tiers_df[ah_tiers_df$key == i, "tier1a"] <- "Extended"
+    } else if (ah_tiers_df[ah_tiers_df$key == i, "tier1a1"] == "Core" &
+               ah_tiers_df[ah_tiers_df$key == i, "tier1a3"] == "Core" &
+               ah_tiers_df[ah_tiers_df$key == i, "tier4b2"] == "Core") {
+      ah_tiers_df[ah_tiers_df$key == i, "tier1a"] <- "Core"
+    } else {
+      ah_tiers_df[ah_tiers_df$key == i, "tier1a"] <- "Precore"
+    }  
   }
 }
 
