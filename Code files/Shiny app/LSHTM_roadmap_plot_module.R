@@ -1,24 +1,43 @@
-barChartUI <- function(id, title = "Bar Chart") {
+barChartUI <- function(id, title = NULL) {
   ns <- NS(id)
   tagList(
-    h3(title),
+    if (!is.null(title)) h3(title),
     plotOutput(ns("bar_plot"))
   )
 }
 
-barChartServer <- function(id, data, custom_labels, filter_ref = FALSE,
-                           plot_width, plot_height, facet_rows, plot_type, metric_type) {
+
+barChartServer <- function(
+    id,
+    data,                   # reactive(df)
+    custom_labels,          # named character vector: names=tier codes, values=labels (plain text)
+    filter_ref = FALSE,
+    plot_width,
+    plot_height,
+    facet_rows,
+    plot_type,
+    metric_type
+) {
   moduleServer(id, function(input, output, session) {
     
     plot_data <- reactive({
+      
+      df <- data()    # dereference reactive
+      
       if (filter_ref) {
-        data <- subset(data, !(`LSHTM subcomponent` %in% c("tier1a", "tier1b", "tier1c")))
+        df <- subset(
+          df,
+          !(`LSHTM subcomponent` %in% c("tier1a", "tier1b", "tier1c"))
+        )
       }
       
+      # Determine plot type safely (handle NULL when input is hidden)
+      ptype <- plot_type()
+      if (is.null(ptype) || !ptype %in% c("col", "area")) ptype <- "col"
       
-      # Reverse factor levels only if using geom_area
-      if (plot_type() == "area") {
-        data$Level <- factor(data$Level, levels = c(
+      # Control stacking order based on plot type
+      if (ptype == "area") {
+        df$Level <- factor(df$Level, levels = c(
           "no_answer",
           "not_applicable",
           "advanced",
@@ -27,7 +46,7 @@ barChartServer <- function(id, data, custom_labels, filter_ref = FALSE,
           "precore"
         ))
       } else {
-        data$Level <- factor(data$Level, levels = c(
+        df$Level <- factor(df$Level, levels = c(
           "precore",
           "core",
           "extended",
@@ -36,28 +55,54 @@ barChartServer <- function(id, data, custom_labels, filter_ref = FALSE,
           "no_answer"
         ))
       }
-      data
+      
+      df
     })
     
     plot_reactive <- reactive({
+      
       df <- plot_data()
       
-      geom_layer <- if (plot_type() == "col") {
-        if (metric_type() == "count") {
-          geom_rect(aes(xmin = as.Date(`Start date`) - 0.5,
-                        xmax = as.Date(`End date`) + 0.5,
-                        ymin = n.ymin, ymax = n.ymax, fill = Level))
+      # Friendly validation to avoid ggplot facet crash on empty data
+      validate(
+        need(nrow(df) > 0, "No data available for the selected tiers.")
+      )
+      
+      # Safe plot/metric type handling
+      ptype <- plot_type()
+      if (is.null(ptype) || !ptype %in% c("col", "area")) ptype <- "col"
+      
+      mtype <- metric_type()
+      if (is.null(mtype) || !mtype %in% c("count", "proportion")) mtype <- "count"
+      
+      # Choose layer
+      geom_layer <- if (ptype == "col") {
+        if (mtype == "count") {
+          geom_rect(aes(
+            xmin = as.Date(`Start date`) - 0.5,
+            xmax = as.Date(`End date`) + 0.5,
+            ymin = n.ymin,
+            ymax = n.ymax,
+            fill = Level
+          ))
         } else {
-          geom_rect(aes(xmin = as.Date(`Start date`) - 0.5,
-                        xmax = as.Date(`End date`) + 0.5,
-                        ymin = ymin, ymax = ymax, fill = Level))
+          geom_rect(aes(
+            xmin = as.Date(`Start date`) - 0.5,
+            xmax = as.Date(`End date`) + 0.5,
+            ymin = ymin,
+            ymax = ymax,
+            fill = Level
+          ))
         }
       } else {
-        geom_area(aes(x = as.Date(`End date`),
-                      y = Proportion, fill = Level))
+        geom_area(aes(
+          x = as.Date(`End date`),
+          y = Proportion,
+          fill = Level
+        ))
       }
       
-      y_label <- if (metric_type() == "count" && plot_type() == "col") {
+      y_label <- if (mtype == "count" && ptype == "col") {
         "Number of sites"
       } else {
         "Proportion of sites"
@@ -65,10 +110,13 @@ barChartServer <- function(id, data, custom_labels, filter_ref = FALSE,
       
       ggplot(df) +
         geom_layer +
-        facet_wrap(~ `LSHTM subcomponent`,
-                   labeller = labeller(`LSHTM subcomponent` = custom_labels),
-                   nrow = facet_rows()) +
-        scale_fill_manual(name = "Functional level",
+        facet_wrap(
+          ~ `LSHTM subcomponent`,
+          labeller = labeller(`LSHTM subcomponent` = custom_labels),
+          nrow = facet_rows()
+        ) +
+        scale_fill_manual(
+          name = "Functional level",
           values = c(
             no_answer = "white",
             not_applicable = "grey",
@@ -77,20 +125,33 @@ barChartServer <- function(id, data, custom_labels, filter_ref = FALSE,
             core = "#70C261",
             precore = "#440154"
           ),
-          breaks = c('no_answer','not_applicable', 'advanced', 'extended', 'core', 'precore'),
+          breaks = c(
+            "no_answer",
+            "not_applicable",
+            "advanced",
+            "extended",
+            "core",
+            "precore"
+          ),
           labels = c(
-            no_answer = "No answer",
-            not_applicable = "Not applicable",
-            advanced = "Advanced",
-            extended = "Extended",
-            core = "Core",
-            precore = "Precore"
+            "No answer",
+            "Not applicable",
+            "Advanced",
+            "Extended",
+            "Core",
+            "Precore"
           )
         ) +
         xlab("") +
         ylab(y_label) +
-        scale_y_continuous(labels = if (metric_type() == "proportion") scales::percent_format() else waiver()) +
-        scale_x_date(date_labels = "%Y", date_breaks = "year") +
+        scale_y_continuous(
+          labels = if (mtype == "proportion") scales::percent_format()
+          else waiver()
+        ) +
+        scale_x_date(
+          date_labels = "%Y",
+          date_breaks = "year"
+        ) +
         theme(
           axis.text = element_text(size = 12),
           strip.text = element_text(size = 12),
@@ -99,10 +160,11 @@ barChartServer <- function(id, data, custom_labels, filter_ref = FALSE,
         )
     })
     
-    output$bar_plot <- renderPlot({
-      plot_reactive()
-    }, width = function() { plot_width() * 96 },
-    height = function() { plot_height() * 96 })
+    output$bar_plot <- renderPlot(
+      plot_reactive(),
+      width  = function() plot_width() * 96,
+      height = function() plot_height() * 96
+    )
     
     return(plot_reactive)
   })

@@ -452,91 +452,178 @@ df_ref_long <- df_ref_long %>%
 ## The following Shiny app allows for you to produce data plots dynamically,
 ## allowing you to change the size of the plots however you like.
 
-# Load module
+
 source("Code files/Shiny app/LSHTM_roadmap_plot_module.R")
 
-# UI
+
+
+# Build choiceNames as a list of HTML tags (to render symbols nicely)
+choice_names <- lapply(
+  # decode &amp; -> & for UI text
+  gsub("&amp;", "&", unname(custom_labels), fixed = TRUE),
+  htmltools::HTML
+)
+# Values (what the server receives): the tier codes
+choice_values <- names(custom_labels)
+
+# ✅ Plot facet labels (plain strings for ggplot)
+custom_labels_plot <- gsub("&amp;", "&", custom_labels, fixed = TRUE)
+
+# ---- UI ----
 ui <- fluidPage(
-  titlePanel("LSHTM roadmap subcomponent status over time"),
+  titlePanel("Subcomponent status over time"),
+  
+  
+  tags$head(
+    tags$style(HTML("
+    /* Make the 'selected_tiers' checkbox group display in 2 columns */
+    #selected_tiers .shiny-options-group {
+      column-count: 2;        /* number of columns */
+      column-gap: 1.5rem;     /* spacing between columns */
+    }
+    /* Ensure each checkbox label respects the column layout */
+    #selected_tiers .checkbox,
+    #selected_tiers .checkbox-inline,
+    #selected_tiers label {
+      break-inside: avoid;    /* prevent awkward splits across columns */
+      -webkit-column-break-inside: avoid;
+      display: block;         /* stack items vertically within column */
+      margin-bottom: 6px;
+    }
+  "))
+  ),
+  
+  
   sidebarLayout(
     sidebarPanel(
-      radioButtons("metric_type", "Metric Type",
-                   choices = c("Number of sites" = "count","Proportion of sites" = "proportion"),
-                   selected = "count"),
       
-      conditionalPanel(
-        condition = "input.metric_type == 'proportion'",
-        radioButtons("plot_type", "Plot Type",
-                     choices = c("Bar Chart" = "col", "Area Chart" = "area"),
-                     selected = "col")
+      # Mutually exclusive site selector (replaces tabs)
+      radioButtons(
+        "site_type",
+        "Site type",
+        choices = c(
+          "Surveillance sites" = "surv",
+          "Reference sites"    = "ref"
+        ),
+        selected = "surv"
       ),
       
-      sliderInput("facet_rows", "Number of Facet Rows", min = 1, max = 6, value = 4),
-      sliderInput("plot_width", "Plot Width (inches)", min = 10, max = 25, value = 15),
-      sliderInput("plot_height", "Plot Height (inches)", min = 4, max = 15, value = 9),
-      downloadButton("download_surv_chart", "Download surveillance sites plot"),
-      downloadButton("download_ref_chart", "Download reference sites plot")
+      # Tier selector with explicit label/value mapping
+      checkboxGroupInput(
+        inputId = "selected_tiers",
+        label   = "Subcomponents (tiers)",
+        choiceNames  = choice_names,   # labels shown
+        choiceValues = choice_values,  # values returned
+        selected     = choice_values   # select all by default
+      ),
+      
+      radioButtons(
+        "metric_type",
+        "Metric Type",
+        choices = c(
+          "Number of sites"     = "count",
+          "Proportion of sites" = "proportion"
+        ),
+        selected = "count"
+      ),
+      
+      # Only show plot type when using proportion
+      conditionalPanel(
+        condition = "input.metric_type == 'proportion'",
+        radioButtons(
+          "plot_type",
+          "Plot Type",
+          choices = c("Bar Chart" = "col", "Area Chart" = "area"),
+          selected = "col"
+        )
+      ),
+      
+      sliderInput("facet_rows",  "Number of Facet Rows", 1, 6, 4),
+      sliderInput("plot_width",  "Plot Width (inches)", 10, 25, 15),
+      sliderInput("plot_height", "Plot Height (inches)", 4, 15, 9),
+      
+      radioButtons(
+        "download_format",
+        "Download format",
+        choices = c("PNG" = "png", "PDF" = "pdf"),
+        inline = TRUE,
+        selected = "png"
+      ),
+      
+      downloadButton("download_plot", "Download plot")
     ),
+    
     mainPanel(
-      tabsetPanel(
-        tabPanel("Surveillance sites", barChartUI("surv_chart", "Surveillance sites")),
-        tabPanel("Reference sites", barChartUI("ref_chart", "Reference sites"))
-      )
+      barChartUI("main_chart")
     )
   )
 )
 
-# Server
+# ---- Server ----
 server <- function(input, output, session) {
   
-  # Force plot type to "col" when metric is "count"
+  # For safety: if 'metric_type' is 'count', we ensure plot_type behaves like "col"
+  # Note: plot_type may not exist in the DOM when hidden; the module defends against NULL.
   observeEvent(input$metric_type, {
     if (input$metric_type == "count") {
       updateRadioButtons(session, "plot_type", selected = "col")
     }
+  }, ignoreInit = TRUE)
+  
+  # Reactive dataset + tier filter
+  plot_data <- reactive({
+    # Ensure there is at least one selected tier
+    req(input$selected_tiers)
+    
+    base_df <- if (input$site_type == "surv") {
+      df_surv_long
+    } else {
+      df_ref_long
+    }
+    
+    # Filter by selected tiers (values are the tier codes)
+    base_df %>%
+      filter(`LSHTM subcomponent` %in% input$selected_tiers)
   })
   
-  surv_plot <- barChartServer("surv_chart", df_surv_long, custom_labels,
-                              plot_type = reactive(input$plot_type),
-                              metric_type = reactive(input$metric_type),
-                              plot_width = reactive(input$plot_width),
-                              plot_height = reactive(input$plot_height),
-                              facet_rows = reactive(input$facet_rows)
+  # Single plotting module
+  current_plot <- barChartServer(
+    id             = "main_chart",
+    data           = plot_data,               # pass reactive
+    custom_labels  = custom_labels_plot,      # plain text for ggplot facets
+    filter_ref     = FALSE,
+    plot_type      = reactive(input$plot_type),
+    metric_type    = reactive(input$metric_type),
+    plot_width     = reactive(input$plot_width),
+    plot_height    = reactive(input$plot_height),
+    facet_rows     = reactive(input$facet_rows)
   )
   
-  ref_plot <- barChartServer("ref_chart", df_ref_long, custom_labels,
-                             filter_ref = FALSE,
-                             plot_type = reactive(input$plot_type),
-                             metric_type = reactive(input$metric_type),
-                             plot_width = reactive(input$plot_width),
-                             plot_height = reactive(input$plot_height),
-                             facet_rows = reactive(input$facet_rows)
-  )
-  
-  output$download_surv_chart <- downloadHandler(
+  # Download handler (PNG / PDF)
+  output$download_plot <- downloadHandler(
     filename = function() {
-      paste0("surv_sites_plot_", Sys.Date(), ".png")
+      paste0(
+        input$site_type, "_sites_plot_",
+        Sys.Date(), ".", input$download_format
+      )
     },
     content = function(file) {
-      req(surv_plot())
-      ggsave(file, plot = surv_plot(), width = input$plot_width, height = input$plot_height, dpi = 96)
-    }
-  )
-  
-  output$download_ref_chart <- downloadHandler(
-    filename = function() {
-      paste0("ref_sites_plot_", Sys.Date(), ".png")
-    },
-    content = function(file) {
-      req(ref_plot())
-      ggsave(file, plot = ref_plot(), width = input$plot_width, height = input$plot_height, dpi = 96)
+      ggsave(
+        filename = file,
+        plot     = current_plot(),
+        width    = input$plot_width,
+        height   = input$plot_height,
+        device   = input$download_format,
+        dpi      = if (input$download_format == "png") 96 else NULL
+      )
     }
   )
 }
 
-
-
 shinyApp(ui, server)
+
+
+
 
 #################################### Plot of sites active over time
 
