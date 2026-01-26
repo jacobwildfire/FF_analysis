@@ -25,7 +25,8 @@
 
 # List of required packages
 required_packages <- c("ggplot2", "dplyr", "readxl", "writexl", "stringr", 
-                       "tidyr", "DescTools", "shiny", "lubridate", "purrr")
+                       "tidyr", "DescTools", "shiny", "lubridate", "purrr",
+                       "DT")
 
 # Install missing packages
 missing_packages <- required_packages[!(required_packages %in% installed.packages()[,"Package"])]
@@ -473,25 +474,57 @@ custom_labels_plot <- gsub("&amp;", "&", custom_labels, fixed = TRUE)
 ui <- fluidPage(
   titlePanel("Subcomponent status over time"),
   
-  
   tags$head(
+    tags$script(HTML("
+  Shiny.addCustomMessageHandler('updatePlotHeight', function(h) {
+    document.getElementById('plot_container').style.minHeight = h + 'px';
+  });
+")),
+    
+    
     tags$style(HTML("
-    /* Make the 'selected_tiers' checkbox group display in 2 columns */
-    #selected_tiers .shiny-options-group {
-      column-count: 2;        /* number of columns */
-      column-gap: 1.5rem;     /* spacing between columns */
+    
+/* Give the plot container a minimum height so layout never collapses */
+#plot_container {
+  min-height: 400px;   /* safe initial space */
+}
+    
+    /* Ensure plot container always behaves as a block */
+    #plot_container {
+      display: block !important;
+      width: 100% !important;
+      clear: both !important;
+      margin-bottom: 20px;
     }
-    /* Ensure each checkbox label respects the column layout */
-    #selected_tiers .checkbox,
-    #selected_tiers .checkbox-inline,
-    #selected_tiers label {
-      break-inside: avoid;    /* prevent awkward splits across columns */
-      -webkit-column-break-inside: avoid;
-      display: block;         /* stack items vertically within column */
-      margin-bottom: 6px;
+
+    /* Ensure DataTable starts BELOW the plot, no matter what */
+    #table_container {
+      display: block !important;
+      width: 100% !important;
+      clear: both !important;
+      margin-top: 20px !important;
+      position: relative !important;
+      z-index: 1 !important;
+    }
+
+    /* Force DataTables wrapper not to float up */
+    .dataTables_wrapper {
+      clear: both !important;
+      overflow: visible !important;
+      position: relative !important;
+      z-index: 1 !important;
+    }
+
+    /* Ensure plot itself can't overlap */
+    .shiny-plot-output {
+      display: block !important;
+      clear: both !important;
+      width: 100% !important;
     }
   "))
   ),
+  
+  
   
   
   sidebarLayout(
@@ -553,22 +586,106 @@ ui <- fluidPage(
       downloadButton("download_plot", "Download plot")
     ),
     
+    
+    
     mainPanel(
-      barChartUI("main_chart")
+      # Container ensures plot sits above table in all cases
+      div(
+        id = "plot_container",
+        barChartUI("main_chart")
+      ),
+      
+      # Spacer – guaranteed space
+      div(style = "height: 40px;"),
+      
+      # Container ensures DataTable is treated as a block element
+      div(
+        id = "table_container",
+        DT::dataTableOutput("sitesDataTable")
+      )
     )
+    
+    
   )
 )
 
 # ---- Server ----
 server <- function(input, output, session) {
   
-  # For safety: if 'metric_type' is 'count', we ensure plot_type behaves like "col"
-  # Note: plot_type may not exist in the DOM when hidden; the module defends against NULL.
+  
+  observe({
+    session$sendCustomMessage("updatePlotHeight", input$plot_height * 96);
+  })
+  
+  # --- Load the sites Excel once for performance ---
+  # (If you want auto-reload on file change, I show an alternative below.)
+  sites_raw <- readxl::read_xlsx("Output files/HH/1b. HH site status - All questions.xlsx") %>%
+    `colnames<-`(c("site", "sitecode", "type", "reporting.month", "clinical_care", 
+                   "tier1a1 (SP&M: 1a1)", "tier1a2 (SP&M: 1a2)", "tier1a3 (SP&M: 1a3)", "tier1a", "tier1b1 (SP&M: 1b1)", "tier1b2 (SP&M: 1b5)", 
+                   "tier1b", "tier1c1 (SP&M: 1c2)", "tier1c2 (SP&M: 1c3)", "tier1c3 (SP&M: 1c1)", "tier1c", "tier1d1 (SP&M: 2a1)", 
+                   "tier1d2 (SP&M: 2a2)", "tier1d3 (SP&M: 2a3)", "tier1d4 (SP&M: 2a12)", "tier1d", "tier2a1 (SP&M: 3a1)", "tier2a2 (SP&M: 3a2)", 
+                   "tier2a3 (SP&M: 3a3)", "tier2a", "tier2b (SP&M: 3b1)", "tier2c1 (SP&M: 3c1)", "tier2c2csf (SP&M: 3c2)", "tier2c2urine (SP&M: 3c3)", 
+                   "tier2c2stool (SP&M: 3c4)", "tier2c2swab (SP&M: 3c5)", "tier2c2genit (SP&M: 3c6)", "tier2c3strep (SP&M: 3c7)", 
+                   "tier2c3staph (SP&M: 3c8)", "tier2c3ecoli (SP&M: 3c9)", "tier2c3kleb (SP&M: 3c10)", "tier2c3acine (SP&M: 3c11)", 
+                   "tier2c3salmonella (SP&M: 3c12)", "tier2c3shigella (SP&M: 3c13)", "tier2c3ngonor (SP&M: 3c14)", "tier2c3pseudom (SP&M: 3c17)", 
+                   "tier2c3styphi (SP&M: 3c18)", "tier2c3spara (SP&M: 3c19)", "tier2c3nmening (SP&M: 3c20)", "tier2c4 (SP&M: 3c15)", 
+                   "tier2c", "tier2d1 (SP&M: 3d1)", "tier2d2 (SP&M: 3d2)", "tier2d3 (SP&M: 3d3)", "tier2d", "tier2e1 (SP&M: 3e1)", 
+                   "tier2e2 (SP&M: 3e2)", "tier2e", "tier3a1 (SP&M: 4a1)", "tier3a2 (SP&M: 4a2)", "tier3a3 (SP&M: 4a3)", "tier3a4 (SP&M: 4a4)", 
+                   "tier3a", "tier3b1 (SP&M: 4b1)", "tier3b2 (SP&M: 4b2)", "tier3b", "tier3c1 (SP&M: 4c1)", "tier3c2 (SP&M: 4c2)", 
+                   "tier3c", "tier4a1 (SP&M: 5a1)", "tier4a2 (SP&M: 5a2)", "tier4a3local (SP&M: 5a6)", "tier4a3int (SP&M: 5a7)", 
+                   "tier4a", "tier4b (SP&M: 5b)", "tier4c (SP&M: 5c)"))
+  
+  # --- Build the list of tier columns to include based on selected_tiers ---
+  
+  
+  selected_columns <- reactive({
+    req(input$selected_tiers)
+    
+    # ---- 1. Base columns ----
+    base_cols <- intersect(c("site", "sitecode", "reporting.month"), names(sites_raw))
+    
+    # ---- 2. Regex-based tier matching ----
+    # Match e.g. tier2e, tier2e1, tier2e2, tier2c3stool, etc.
+    pattern <- paste0("^(", paste(input$selected_tiers, collapse = "|"), ")(\\d+)?")
+    tier_cols <- names(sites_raw)[grepl(pattern, names(sites_raw))]
+    
+    # ---- 3. EXTRA RULE: if tier2e or tier3c is selected,
+    #           ALSO include any column whose name starts with "tier2a3"
+    extra_cols <- character(0)
+    
+    if ("tier2e" %in% input$selected_tiers || "tier3c" %in% input$selected_tiers) {
+      extra_cols <- c(
+        extra_cols,
+        names(sites_raw)[startsWith(names(sites_raw), "tier2a3")]  # <-- matches e.g. "tier2a3 (SP&M: 3a3)"
+      )
+    }
+    
+    # ---- 4. Return unique list ----
+    unique(c(base_cols, tier_cols, extra_cols))
+  })
+  
+  
+  
+  # --- Create the reactive data shown in the DataTable ---
+  sites_data <- reactive({
+    cols <- selected_columns()
+    
+    validate(
+      need(length(cols) > 0, "No matching tier columns found in the Excel for the current selection.")
+    )
+    
+    sites_raw %>%
+      dplyr::arrange(dplyr::across(dplyr::all_of(intersect(c("sitecode", "reporting.month"), names(sites_raw))))) %>%
+      dplyr::select(dplyr::all_of(cols))
+  })
+  
+  # For safety: if 'metric_type' is 'count', keep plot_type as "col"
   observeEvent(input$metric_type, {
     if (input$metric_type == "count") {
       updateRadioButtons(session, "plot_type", selected = "col")
     }
   }, ignoreInit = TRUE)
+  
   
   # Reactive dataset + tier filter
   plot_data <- reactive({
@@ -618,6 +735,21 @@ server <- function(input, output, session) {
       )
     }
   )
+  
+  
+  # --- Render the DataTable ---
+  output$sitesDataTable <- DT::renderDataTable({
+    DT::datatable(
+      sites_data(),
+      rownames = FALSE,
+      options = list(
+        pageLength = 25,
+        scrollX = TRUE,
+        dom = "Bfrtip"
+      )
+    )
+  })
+  
 }
 
 shinyApp(ui, server)
