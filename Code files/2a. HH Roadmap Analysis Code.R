@@ -55,7 +55,6 @@ if (getwd() != wd) {
 ## Load up the LSHTM subcomponent source information files
 df <- read_xlsx("Output files/HH/1. HH LSHTM Roadmap Status.xlsx")
 
-
 ## Load in site masterlist to obtain site information:
 site_info <- read_xlsx("Resource files/Site masterlist template.xlsx", sheet = "Sentinel Sites") %>% # Replace with your site masterlist .xlsx filepath 
   mutate(`Support start date` = as.Date(`Support start date`),
