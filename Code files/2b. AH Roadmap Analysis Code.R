@@ -619,40 +619,40 @@ server <- function(input, output, session) {
                    "tier4a3 (SP&M: B6.3.3)", "tier4a4 (SP&M: B6.3.5)", "tier4a", "tier4b1 (SP&M: B6.4.1)", "tier4b2 (SP&M: B6.4.2)", "tier4b", 
                    "tier4c (SP&M: B6.5)"))
   
-  # --- Build the list of tier columns to include based on selected_tiers ---
+  # --- Build the list of tier columns to include based on ot_selected_tiers ---
   
   
   selected_columns <- reactive({
-    req(input$selected_tiers)
+    req(input$ot_selected_tiers)
     
     # ---- 1. Base columns ----
     base_cols <- intersect(c("site", "sitecode", "reporting.month"), names(sites_raw))
     
     # ---- 2. Regex-based tier matching ----
     # Match e.g. tier2e, tier2e1, tier2e2, tier2c3stool, etc.
-    pattern <- paste0("^(", paste(input$selected_tiers, collapse = "|"), ")(\\d+)?")
+    pattern <- paste0("^(", paste(input$ot_selected_tiers, collapse = "|"), ")(\\d+)?")
     tier_cols <- names(sites_raw)[grepl(pattern, names(sites_raw))]
     
     # ---- 3. EXTRA RULE: if tier1a is selected,
     #           ALSO include any column whose name starts with "tier4b2"
     extra_cols <- character(0)
     
-    if ("tier1a" %in% input$selected_tiers) {
+    if ("tier1a" %in% input$ot_selected_tiers) {
       extra_cols <- c(
         extra_cols,
         names(sites_raw)[startsWith(names(sites_raw), "tier4b2")]  # <-- matches e.g. "tier4b2 (SP&M: B6.4.2)"
       )
     }
     
-    if ("tier2c" %in% input$selected_tiers) {
+    if ("tier2c" %in% input$ot_selected_tiers) {
       extra_cols <- c(
         extra_cols,
         names(sites_raw)[endsWith(names(sites_raw), "tier2b")]  # <-- matches e.g. "tier2b"
       )
     }
     
-    if ("tier2d" %in% input$selected_tiers || "tier3c" %in% input$selected_tiers ||
-        "tier4b" %in% input$selected_tiers) {
+    if ("tier2d" %in% input$ot_selected_tiers || "tier3c" %in% input$ot_selected_tiers ||
+        "tier4b" %in% input$ot_selected_tiers) {
       extra_cols <- c(
         extra_cols,
         names(sites_raw)[startsWith(names(sites_raw), "tier1b5")]  # <-- matches e.g. "tier1b5 (SP&M: B4.7)"
